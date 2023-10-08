@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:stretchColumns="1"
+    android:layout_height="match_parent">
+
+    <TableRow>
+        <TextView
+            android:text="用户名："
+            android:textSize="25dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <EditText
+            android:id="@+id/user"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="DongChenglin"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="密     码:"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/password"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="密码"
+            android:password="true"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="性     别:"
+            android:textSize="25dp"/>
+        <RadioGroup
+            android:id="@+id/sex_Radiogroup"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/man"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textSize="25dp"/>
+            <RadioButton
+                android:id="@+id/woman"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textSize="25dp"/>
+        </RadioGroup>
+    </TableRow>
+    <TableRow>
+        <CheckBox
+            android:id="@+id/opration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否同意相关协议"
+            android:textSize="25dp"
+            android:layout_span="2"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:textSize="25dp"
+            android:textColor="	#FF4500"
+            android:text="登录"/>
+    </TableRow>
+
+</TableLayout>
